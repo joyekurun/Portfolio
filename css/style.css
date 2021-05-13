@@ -1,0 +1,134 @@
+
+body{
+	margin: 0 auto;
+
+}
+
+
+header{
+	
+	height: 6px;
+	 display: inline-block;
+}
+
+.logo{
+margin-right: 100px;
+display: inline-block;
+background-color: #e7e7e7;
+
+
+}
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  float: left;
+  text-decoration: none;
+  margin-right: 30px;
+
+}
+
+.hero{
+	margin-left: 60px;
+
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+  margin-top: -80px;
+}
+
+
+
+.flex-container>div {
+  background-color: #D5004C;
+  color: white;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+
+  font-size: 30px;
+    align-items: center;
+
+}
+
+
+h2{
+  font-family: "Montserrat", sans-serif;
+  color: #3B5998;
+  font-weight: 400;
+  font-size: 24px;
+ 
+}
+
+
+h1{
+  font-family: "Montserrat", sans-serif;
+  color: #3B5998;
+  font-weight: 900;
+  font-size: 24px;
+ 
+}
+
+.caseStudy{
+
+  margin-top: 60px;
+
+
+}
+
+.flex-container2>div {
+ background-color: #f1f1f1;
+  color: #000;
+  width: 530px;
+  height: 300px;
+  margin: 10px;
+  text-align: left;
+  font-size: 30px;
+    align-items: center;
+
+}
+
+
+
+.flex-container2 {
+  
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+
+footer{
+  background-color: #0E0055;
+   text-align: center;
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
