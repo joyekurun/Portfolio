@@ -45,23 +45,34 @@
 	<section>
 			<div class="flex-container3" style="margin-top: 30px;">
 			  <div style="order: 1">
-			  <img src="images/uxresearch.png" style =" width: 40%; margin-top: 10px; alt="UX research"><br />
-			<h3>UX Research</h3>
-			<p>A Method that encompasses a variety of investigative methods used to add context and insight to the design process. The main goal of design research is to inform the design process from the perspective of the end user. It is research that prevents us from designing for one user: ourselves. It’s fairly well accepted that the purposes of UX and user-centered design are to design with the end-user in mind; and it’s research that tells us who that person is, in what context they’ll use this product or service, and what they need from us.</p>
+			  <img src="images/uxresearch.png" style =" width: 40%; margin-top: 10px;"><br />
+			
+			  <button class="collapsible"><h3 style="color: #fff;">UX Research</h3></button>
+<div class="content">
+  <p>A Method that encompasses a variety of investigative methods used to add context and insight to the design process. The main goal of design research is to inform the design process from the perspective of the end user. It is research that prevents us from designing for one user: ourselves. .</p>
+</div>
+			
 		</div>
 			 
 			  <div style="order: 2">
 			  	<img src="images/uidesign.png" style =" width: 40%; margin-top: 10px;" alt="ui Design"><br />
-			<h3>UI Design</h3>
-			<p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. UI design refers to graphical user interfaces and other forms—e.g., voice-controlled interfaces.
+			<button class="collapsible"><h3 style="color:#fff">UI Design</h3></button>
 
-User interfaces are the access points where users interact with designs.</p>
+			<div class="content">
+  <p>User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style. Designers aim to create interfaces which users find easy to use and pleasurable. UI design refers to graphical user interfaces and other forms—e.g., voice-controlled interfaces.User interfaces are the access points where users interact with designs.</p>
+</div>
+			
 			  </div> 
 		
 			  <div style="order: 3">
 			  	<img src="images/webdev.png" style =" width: 40%; margin-top: 10px; alt="Web Development"><br />
-			<h3>Web Development</h3>
-			<p> This protocol specifies different phases a project will go through in order to attain full completion. It outlines the different steps that will be taken—the stages of development—going from the simple discussion between both parties to the application being online, functional and operational.</p>
+			<button class="collapsible"><h3 style="color:#fff">Web Development</h3></button>
+
+					<div class="content">
+  <p>This protocol specifies different phases a project will go through in order to attain full completion. It outlines the different steps that will be taken—the stages of development—going from the simple discussion between both parties to the application being online, functional and operational.</p>
+</div>
+
+		
 			  </div>
 			</div>
 
@@ -84,6 +95,22 @@ User interfaces are the access points where users interact with designs.</p>
 		</footer>
 
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 
 </body>

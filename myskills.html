@@ -53,9 +53,9 @@
 			  <div style="order: 2">
 					<h1 style="; padding-left: 10px">PLANNEX MOBILE APP</h1>
 					<h2 style="font-size: 24px; padding-left: 10px"> Summary</h2>
-					<p style="font-size: 16px; padding-left: 10px">Train and bus travelers need to plan, get information about Post Pandemic and be able to autopay and having great Entertainment on board while travelling</p>
-					<h2 style="font-size: 24px; padding-left: 10px"> My responsibilities - UX /UI Designer</h2>
-					<p style="font-size: 16px; padding-left: 10px">Research | Ideate | Design | Prototype | Test | Hi Prototype</p>
+					<p style="font-size: 16px; padding-left: 10px; margin-top: -20px;">Train and bus travelers need to plan, get information about Post Pandemic and be able to autopay and having great Entertainment on board while travelling <button id="myBtn">View prototype</button></p>
+					<h2 style="font-size: 24px; padding-left: 10px; "> My responsibilities - UX /UI Designer</h2>
+					<p style="font-size: 16px; padding-left: 10px; margin-top: -20px;">Research | Ideate | Design | Prototype | Test | Hi Prototype</p>
 			  </div>
 			</div>
 		</section>
@@ -66,11 +66,12 @@
 			  <img src="images/furrytale.png" alt="Furry Tales Mobile Application"></div>
 			  <div style="order: 2">
 					<h1 style="; padding-left: 10px">Furry Tales Pet Adoption</h1>
-					<h2 style="font-size: 24px; padding-left: 10px"> Summary</h2>
-					<p style="font-size: 16px; padding-left: 10px">our app was designed to help users that want to adopt pets find their perfect match. We have observed that the way shelters and rescue websites are made is not making pet adoptions easier, which is causing people to buy pets than adopting
+					<h2 style="font-size: 24px; padding-left: 10px; margin-top: -20px;"> Summary</h2>
+					<p style="font-size: 16px; padding-left: 10px; margin-top: -20px;">our app was designed to help users that want to adopt pets find their perfect match. We have observed that the way shelters and rescue websites are made is not making pet adoptions easier, which is causing people to buy pets than adopting  <button id="myBtn2">View prototype</button>
+
 </p>
 					<h2 style="font-size: 24px; padding-left: 10px"> My responsibilities - UX /UI Designer</h2>
-					<p style="font-size: 16px; padding-left: 10px">Research | Ideate | Design | Prototype | Test | Hi Prototype</p>
+					<p style="font-size: 16px; padding-left: 10px; margin-top: -20px;">Research | Ideate | Design | Prototype | Test | Hi Prototype</p>
 			  </div>
 			</div>
 		</section>
@@ -84,13 +85,60 @@
 
 </h1>
 					<h2 style="font-size: 24px; padding-left: 10px"> Summary</h2>
-					<p style="font-size: 16px; padding-left: 10px">Redesigning the purchase portal for New Castle United, Boston Ruins & Arizona Diamond Backs. 
+					<p style="font-size: 16px; padding-left: 10px">Redesigning the purchase portal for New Castle United, Boston Ruins & Arizona Diamond Backs <button id="myBtn">View prototype</button>
 
 </p>
 					<h2 style="font-size: 24px; padding-left: 10px"> My responsibilities - UX /UI Designer</h2>
 					<p style="font-size: 16px; padding-left: 10px">Research | Ideate | Design | Prototype | Test | Hi Prototype</p>
 			  </div>
 			</div>
+
+
+
+<!-- Trigger/Open The Modal -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>View Prototype</h2>
+    </div>
+    <div class="modal-body">
+      
+      <img src="images/prototypeplannex.png">
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>View Prototype</h2>
+    </div>
+    <div class="modal-body">
+      
+      <img src="images/prototypefurry.png">
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 		</section>
 
 		<footer>
@@ -106,7 +154,35 @@
 				Copyright © 2021. All right reserved
 		</footer>
 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
 
 
 </body>
